@@ -3,9 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portfolio page of B">
+    <meta name="author" content="B">
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <title>Welcome - Brandon</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
 </head>
 <body>
-    
+    <header id="header-nav">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+            <a class="navbar-brand" href="#">Brandon</a>
+
+            <button class="navbar-toggler"
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbar-menu" 
+                aria-controls="navbar-menu" 
+                aria-expanded="true">
+                <!--<span class="navbar-toggler-icon"></span>-->
+                <img src="assets/icon/hamburger.svg" />
+            </button>
+
+            <div class="collapse navbar-collapse nav-link-group" id="navbar-menu">
+                <!--<ul class="nav-list navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                </ul>-->
+                <a class="nav-item nav-link active" href="#about">About</a>
+                <a class="nav-item nav-link" href="#projects">Projects</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <div id="heading" class="heading">
+                <h1>Hi, my name is B</h1>
+            </div>
+            <p class="introduction">
+                A highly motivated and fast-learner software engineer, looking for an opportunity to work as a 
+                team member on challenging software projects.
+            </p>
+            <!--<div>
+                <a></a>
+            </div>-->
+        </div>
+    </div>
+
+    <div id="about" class="about spacer">
+        <div class="container">
+            <div class="heading">
+                <h2>About Me</h2>
+            </div>
+            <p class="introduction">
+                Software engineer specialized in Mobile and Web development.
+            </p>
+            <!--<div>tech stack logo</div>-->
+        </div>
+    </div>
+
+    <div id="projects" class="projects spacer">
+        <div class="container">
+            <div class="heading">
+                <h2>Projects</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <img class="" src="" alt="" />
+                    <h6>Collab - Not Released</h6> Thesis
+                    Technologies Used :
+                    Android
+                    Firebase Realtime Database
+                    <p>Collab is an Android based application to make team communication and collaboration easier.</p>
+                </div> <!--add project working type (group or no), role / work-->
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <img class="" src="" alt="" />
+                    <h6>Sigap - Not Released</h6> Bangkit 2021
+                    Technologies Used :
+                    Android
+                    Tensorflow Lite
+                    <p>
+                        Sigap is an Android based application for Palang Merah Indonesia which used machine learning to do 
+                        blood donor screening.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <img class="" src="" alt="" />
+                    <h6>Weather app - Not Released</h6> Personal
+                    Flutter
+                    OpenWeatherMap
+                    <p>Weather app is an Android based application to check city / country / continent's current weather.</p>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <img class="" src="" alt="" />
+                    <h6>CaRent - Coming Soon</h6> Personal
+                    Flutter
+                    <p>CaRent is a multiplatform web and Android based application for renting cars.</p>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <img class="" src="" alt="" />
+                    <h6>CSB System - Coming Soon</h6> Personal
+                    React.js
+                    <p>CSB System is a web based application for splitting car bill among friends.</p>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <img class="" src="" alt="" />
+                    <h6>_ - Coming Soon</h6> Personal
+                    Android
+                    Figma
+                    <p>_ is an Android based application for employee management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="spacer">
+                <h4>Contact</h4>
+                <div id="contact" class="contact">
+                    <a href="www.linkedin.com/in/brandon-maverick-204913199">
+                        <img src="assets/logo/linkedin-logo.svg" alt="LinkedIn Logo" />
+                        LinkedIn
+                    </a>
+                    <a href="mailto:brandonmaverick10@gmail.com">
+                        <img src="assets/logo/email_logo.svg" alt="Email Logo" />
+                        Email
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2025 Brandon</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/index.js"></script>
 </body>
 </html>
+
+<!--
+Image Assets Source :
+- LinkedIn logo : https://www.linkedin.com/feed/
+- Email logo : https://fonts.google.com/icons?selected=Material+Symbols+Outlined:mail:FILL@1;wght@400;GRAD@0;opsz@24&icon.query=email&icon.size=24&icon.color=%23000
+-->
