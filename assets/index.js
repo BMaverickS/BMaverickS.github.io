@@ -1,5 +1,3 @@
-//document.getElementsByClass('show')
-
 window.onscroll = function(e)
 {
     let scroll = window.scrollY
@@ -16,14 +14,3 @@ window.onscroll = function(e)
         headerNav.classList.remove('fixed-header')
     }
 }
-
-/*
-Siang mas Santo, ini Brandon
-
-Mau tanya, di tempat kerja mas Santo sekarang lagi ada buka lowongan software developer gak ?
-
-Kalau ada,
-Tolong kasih cv saya ke hr managernya 
-
-Terima kasih
-*/

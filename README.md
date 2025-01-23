@@ -8,4 +8,4 @@ Tech :
 - CSS
 - JavaScript
 - Bootstrap 5
-- GitHub Page (hosting)
+- GitHub Pages (hosting)

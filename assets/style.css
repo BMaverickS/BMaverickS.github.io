@@ -1,7 +1,10 @@
 :root
 {
-    --white-web: #ffffff;
-    --grey-web: #f3f5fa;
+    --white-web: #FFFFFF;
+    --blue-web: #165ffc;
+    --grey-web: #F3F5FA;
+    --grey-border: #E1E1E1;
+    --black-hover: #0000000D;
     --black-web: #000000;
 }
 
@@ -36,7 +39,6 @@ a
 /* ------------------------------ Header ------------------------------ */
 header
 {
-    /*background-color: gray;*/
     width: 100%;
     position: absolute;
     background: transparent;
@@ -45,18 +47,13 @@ header
 .fixed-header
 {
     position: fixed;
-    background: rebeccapurple;
+    background: linear-gradient(90deg, var(--blue-web) 0%, var(--black-web) 100%);;
     animation: header-slide 0.3s linear 1 normal both;
 }
 
 nav
 {
-    /*height: 80px;*/
     display: flex;
-    /*justify-content: space-between;
-    align-items: center;
-    margin-left: 1rem;
-    margin-right: 1rem;*/
 }
 
 .navbar
@@ -67,6 +64,7 @@ nav
 
 .navbar-brand
 {
+    color: var(--white-web) !important;
     font-size: 1.5rem !important;
 }
 
@@ -84,15 +82,6 @@ nav
     background-position: center;
     background-size: 100%;
 }
-/*.navbar-toggler-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}*/
 
 header .navbar-collapse.collapsing, header .navbar-collapse.show
 {
@@ -103,16 +92,10 @@ header .navbar-collapse.collapsing, header .navbar-collapse.show
     width: 100%;
 }
 
-header a:hover {
-    background: rgba(0, 0, 0, 0.05);
+header .show a:hover {
+    background: var(--black-hover); /*rgba(0, 0, 0, 0.05)*/
 }
-/*element.style {
-    background: aliceblue;
-    position: absolute;
-    top: 78px;
-    left: 0px;
-    width: 100%;
-}*/
+
 .navbar-light .navbar-toggler
 {
     color: transparent !important;
@@ -124,28 +107,35 @@ header a:hover {
     justify-content: right;
 }
 
-.nav-list
-{
-    display: flex;
-    list-style-type: none;
-}
-
-.nav-list li a
+.nav-link-group .nav-link
 {
     color: var(--white-web);
-    text-decoration: none;
+    padding: 1rem;
 }
 
-.nav-list li
+@media(max-width: 992px)
 {
-    padding-left: 5rem;
+    .nav-link-group .nav-link
+    {
+        color: var(--black-web);
+        border-bottom: 1px solid var(--grey-border);
+    }
+}
+
+@media(width: 992px)
+{
+    .nav-link-group .nav-link
+    {
+        color: var(--white-web);
+        border-bottom: none;
+    }
 }
 
 /* ------------------------------ Hero ------------------------------ */
 .hero {
-    /*height: 65vh;*/
     align-content: center;
-    background: brown; /*#0088ff*/
+    background: linear-gradient(90deg, #165ffc 0%, #000000 100%);
+    color: var(--white-web);
     /*padding-top: 8.75rem;
     padding-bottom: 3.75rem;*/
     padding-top: 10rem;
@@ -158,25 +148,52 @@ header a:hover {
 }
 
 /* ------------------------------ About ------------------------------ */
-.about
-{
-    /**/
-}
+/*.about {}*/
 
 /* ------------------------------ Projects ------------------------------ */
-.projects {}
+/*.projects {}*/
+
+.item
+{
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.app-logo
+{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+h6
+{
+    font-size: 1.125rem !important;
+}
+
+.technologies-list
+{
+    margin-bottom: .5rem;
+}
 
 /* ------------------------------ Footer ------------------------------ */
 footer
 {
-    /*height: 12.5rem;*/
-    /*height: 6.25rem;*/
     background-color: var(--grey-web);
     margin-top: 7.5rem;
-    /*padding-top: 3.75rem;*/
 }
-/*https://www.zerrium.com/#home
-https://christopherted.netlify.app/*/
+
+footer .container
+{
+    text-align: center;
+    justify-items: center;
+}
+
+footer h4
+{
+    margin-bottom: 2.8125rem;
+}
+
 .contact
 {
     display: flex;
@@ -189,23 +206,17 @@ https://christopherted.netlify.app/*/
 
 .contact img
 {
-    /*margin-right: 0.5rem;*/
+    width: 24px;
+    height: 24px;
 }
 
-.contact a:last-child
+.contact a:not(:first-child)
 {
     margin-left: 2rem;
 }
 
-footer .container
-{
-    text-align: center;
-    justify-items: center;
-}
-
 .copyright p
 {
-    /*text-align: center;*/
     margin-bottom: 0;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -216,12 +227,15 @@ footer .container
 {
     0%
     {
-        /*height: 0%;*/
         transform: translateY(-100%);
     }
     100%
     {
-        /*height: 100%;*/
         transform: translateY(0);
     }
 }
+
+/* Note :
+- https://careerfoundry.com/en/blog/ui-design/introduction-to-color-theory-and-color-palettes/
+- https://www.freepik.com/free-photo/abstract-binary-code-background_6038282.htm#fromView=search&page=1&position=4&uuid=cdeb0179-2115-4d46-bf71-a78926a8f170&new_detail=true&query=coding+screen
+*/
